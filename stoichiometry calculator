@@ -1,2 +1,10 @@
-# Auto detect text files and perform LF normalization
-* text=auto
+import random
+elements = ["H", "He", "Li", "Be", "B", "C", "N", "O", "F", "Ne", "Na", "Mg", "Al", "Si", "P",
+
+def main():
+  get
+
+
+class Element:
+  def __init__(self, symbol, count):
+  
