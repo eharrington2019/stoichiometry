@@ -9,9 +9,9 @@ symbol = ["H", "He", "Li", "Be", "B", "C", "N", "O", "F", "Ne", "Na", "Mg", "Al"
 def main():
     printHeader()
     leftSide = buildSide()
-    rightSide = buildSide()
-    print(leftSide + "->" + rightSide)
-
+    # rightSide = buildSide()
+    print(leftSide)
+# print(leftSide + "->" + rightSide)
 
 def buildSide():
     print("Type left side")
@@ -42,7 +42,7 @@ def getAnswer(questionString, confirmList):
         answer = input(questionString)
         if answer in confirmList:
             return answer
-    elif answer == "Stop" or answer == "stop" or answer == "s":
+        elif answer == "Stop" or answer == "s":
             return answer
 
 main()
