@@ -15,11 +15,10 @@ def main():
 
 def buildSide():
     print("Type left side")
-    if input(getAnswer("Type Element: ", symbol)) == "Stop" or "stop":
-        print("Type right side")
-        getAnswer2("Type Element: ", symbol)
-    if input(getAnswer2("Type Element: ", symbol)) == "end":
-        print(leftSide + "->" + rightSide)
+    getAnswer("Type Element: ", symbol)
+    print("Type right side")
+    getAnswer("Type Element: ", symbol)
+    # print(leftSide + "->" + rightSide)
 
 class Compound:
   def __init__(self, element1, element2, count):
@@ -38,21 +37,12 @@ elements = [
 def printHeader():
     print("Stiochiometry")
 
-
 def getAnswer(questionString, confirmList):
     while(True):
         answer = input(questionString)
         if answer in confirmList:
             return answer
-        elif answer == "Stop" or answer == "stop":
-            return answer
-
-def getAnswer2(questionString, confirmList):
-    while(True):
-        answer = input(questionString)
-        if answer in confirmList:
-            return answer
-        elif answer == "Stop" or answer == "stop":
+    elif answer == "Stop" or answer == "stop" or answer == "s":
             return answer
 
 main()
