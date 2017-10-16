@@ -7,24 +7,18 @@ symbol = ["H", "He", "Li", "Be", "B", "C", "N", "O", "F", "Ne", "Na", "Mg", "Al"
 "Fm", "Md", "No", "Lr", "Rf", "Db", "Sg", "Bh", "Hs", "Mt", "Ds", "Rg", "Cn", "Nh", "Fl", "Mc", "Lv", "Ts", "Og"]
 
 def main():
-    printHeader
+    printHeader()
     leftSide = buildSide()
     # rightSide = buildSide()
     print(leftSide)
 # print(leftSide + "->" + rightSide)
 
 def buildSide():
-<<<<<<< HEAD
     print("Type left side")
     getAnswer("Type Element: ", symbol)
     print("Type right side")
     getAnswer("Type Element: ", symbol)
     # print(leftSide + "->" + rightSide)
-=======
-    if input(getAnswer) == "Stop":
-        print("Right Side")
-        getAnswer2
->>>>>>> parent of 09f4d47... rwjyt5emht5
 
 class Compound:
   def __init__(self, element1, element2, count):
@@ -40,31 +34,15 @@ elements = [
     Element("Li", 2)
     ]
 
-
-
 def printHeader():
     print("Stiochiometry")
 
 def getAnswer(questionString, confirmList):
-    print("Left Side")
     while(True):
         answer = input(questionString)
         if answer in confirmList:
             return answer
-<<<<<<< HEAD
         elif answer == "Stop" or answer == "s":
-=======
-        elif answer == "Stop" or answer == "stop":
-            return answer
-
-def getAnswer2(questionString, confirmList):
-    print("Right Side")
-    while(True):
-        answer = input(questionString)
-        if answer in confirmList:
-            return answer
-        elif answer == "Stop" or answer == "stop":
->>>>>>> parent of 09f4d47... rwjyt5emht5
             return answer
 
 main()
