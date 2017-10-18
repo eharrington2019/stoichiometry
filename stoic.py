@@ -9,19 +9,24 @@ symbol = ["H", "He", "Li", "Be", "B", "C", "N", "O", "F", "Ne", "Na", "Mg", "Al"
 def main():
     printHeader
     leftSide = buildSide()
-    # rightSide = buildSide()
+    rightSide = buildSide()
     print(leftSide)
 # print(leftSide + "->" + rightSide)
 def buildside():
     print("Type left side")
-    getAnswer("Type Element: ", symbol)
-    print("Type right side")
-    getAnswer("Type Element: ", symbol)
+    leftElements = []
+    while(True):
+        answer = getAnswer("Type Element: ", symbol)
+        if answer == "NOOO":
+            break
+        leftElements.append(answer)
+
 
 def getAnswer(questionString, confirmList):
-    if input(confirmList) == "Stop":
-         
-    elif keep going
+    answer = input(questionString)
+    if answer == "stop":
+        #end function
+    elif
     # print(leftSide + "->" + rightSide)
 
 
@@ -45,9 +50,8 @@ def printHeader():
 
 def getAnswer(questionString, confirmList):
     answer = input(questionString)
-    if answer not in confirmList:
-        print("NOPE")
-    if answer == "STOP":
+    if answer == "stop":
+
 
 def getAnswer2(questionString, confirmList):
     while(True):
