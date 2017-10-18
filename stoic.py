@@ -12,16 +12,18 @@ def main():
     # rightSide = buildSide()
     print(leftSide)
 # print(leftSide + "->" + rightSide)
-
-def buildSide():
+def buildside():
     print("Type left side")
     getAnswer("Type Element: ", symbol)
     print("Type right side")
     getAnswer("Type Element: ", symbol)
+
+def getAnswer(questionString, confirmList):
+    if input(confirmList) == "Stop":
+         
+    elif keep going
     # print(leftSide + "->" + rightSide)
-    if input(getAnswer) == "Stop":
-        print("Right Side")
-        getAnswer2
+
 
 class Compound:
   def __init__(self, element1, element2, count):
@@ -46,7 +48,6 @@ def getAnswer(questionString, confirmList):
     if answer not in confirmList:
         print("NOPE")
     if answer == "STOP":
-        pass
 
 def getAnswer2(questionString, confirmList):
     while(True):
