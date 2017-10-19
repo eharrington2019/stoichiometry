@@ -10,25 +10,22 @@ def main():
     printHeader
     leftSide = buildSide()
     rightSide = buildSide()
-    print(leftSide)
-# print(leftSide + "->" + rightSide)
-def buildside():
-    print("Type left side")
+    print(leftSide, rightSide)
+
+def buildSide():
+    print("Type side")
     leftElements = []
     while(True):
-        answer = getAnswer("Type Element: ", symbol)
+        answer = input("Type Element: ")
         if answer == "NOOO":
             break
         leftElements.append(answer)
-
+    return leftElements
 
 def getAnswer(questionString, confirmList):
-    answer = input(questionString)
-    if answer == "stop":
-        #end function
-    elif
-    # print(leftSide + "->" + rightSide)
-
+    while(True):
+        answer = input(questionString)
+        return answer
 
 class Compound:
   def __init__(self, element1, element2, count):
@@ -44,19 +41,8 @@ elements = [
     Element("Li", 2)
     ]
 
-
 def printHeader():
     print("Stiochiometry")
 
-def getAnswer(questionString, confirmList):
-    answer = input(questionString)
-    if answer == "stop":
-
-
-def getAnswer2(questionString, confirmList):
-    while(True):
-        answer = input(questionString)
-        if answer in confirmList:
-            return answer
 
 main()
