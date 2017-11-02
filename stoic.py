@@ -36,11 +36,6 @@ class Element:
       self.symbol = symbol
       self.count = count
 
-elements = [
-    Element("H", 1),
-    Element("Li", 2)
-    ]
-
 def printHeader():
     print("Stiochiometry")
 
